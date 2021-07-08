@@ -1,0 +1,164 @@
+/* keyframes */
+
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+        transform: scale(.7, .7);
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+
+/* lazy loader */
+
+.hidden {
+    opacity: 0%;
+}
+
+.fade-in-element {
+    animation: fade-in 2.4s;
+}
+
+
+/* mobile first */
+
+
+/* hero banner */
+
+#hero-container {
+    display: grid;
+    justify-content: center;
+    background-image: url('img/webDev.jpg');
+    background-position: center;
+    background-attachment: local;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 15%;
+}
+
+
+/* hero banner text */
+
+#hero-container #name-header {
+    background-color: rgba(5, 5, 5, 0.815);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#hero-container .subtext {
+    animation: linear 2s slide-right;
+    color: rgb(230, 10, 10);
+}
+
+
+/* section 1 div */
+
+.section-1-img {
+    justify-content: center;
+    background-image: url('img/section1img.jpg');
+    background-position: center right;
+    background-attachment: local;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    padding: 15%;
+}
+
+.section-1-img #section-1 #about1 {
+    position: relative;
+    right: 25%;
+    background-color: rgba(5, 5, 5, 0.815);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+
+/* section 2  div*/
+
+.section-2-img {
+    justify-content: center;
+    background-image: url('img/oliviakona.jpg');
+    background-position: center right;
+    background-attachment: local;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 15%;
+}
+
+.section-2-img #section-2 #about2 {
+    position: relative;
+    right: 25%;
+    background-color: rgba(5, 5, 5, 0.815);
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+
+
+/* section 3 div */
+
+.section-3-img {
+    justify-content: center;
+    background-image: url('img/prison.jpg');
+    background-position: center right;
+    background-attachment: local;
+    background-size: cover;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+    padding: 15%;
+}
+
+.section-3-img #section-3 #about3 {
+    position: relative;
+    right: 25%;
+    left: -25%;
+    background-color: rgba(5, 5, 5, 0.815);
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    width: 150%;
+}
+
+#about-cta,
+#skills-cta {
+    color: rgb(180, 179, 179);
+    text-decoration-line: underline;
+}
+
+
+/* responsive */
+
+@media screen and (min-width: 698px) {
+    #hero-container {
+        white-space: nowrap;
+    }
+    #hero-container #name-header {
+        color: rgb(255, 255, 255);
+    }
+    .section-1-img #section-1 #about1 {
+        position: relative;
+        right: 25%;
+        background-color: rgba(5, 5, 5, 0.815);
+        padding: 20px;
+        color: rgb(255, 255, 255);
+    }
+    .section-3-img #section-3 #about3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .section-2-img {
+        background-position: left;
+    }
+}
